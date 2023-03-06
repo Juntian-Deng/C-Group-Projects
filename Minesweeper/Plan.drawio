@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2023-03-06T16:44:32.948Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="c6cHtNRlfcb-N4uVv6VM" version="21.0.2" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="913" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sI31NvXyzNUmUvLH47iU-3" value="Board" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="120" y="150" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-4" value="realBoard() board that stores where the mines are randomized each game" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-3">
+          <mxGeometry y="30" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-5" value="userBoard() game board that shows up on the interface, updated live based off of user input" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-3">
+          <mxGeometry y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-23" value="Score() updates the score for number of mines remaining&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-3">
+          <mxGeometry y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-24" value="highScore() stores a score in txt file, if it is passed, then the score becomes new score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-3">
+          <mxGeometry y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-8" value="Mines" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="460" y="150" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-9" value="checkMine() checks for mines in available tiles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-8">
+          <mxGeometry y="30" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-14" value="reveal() reveals mines in a certain radius" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-8">
+          <mxGeometry y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-16" value="Explode (bool) blows up a mine, if bool is true, then the mine causes damage, if false, it is simply nullified&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-8">
+          <mxGeometry y="110" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-22" value="protection (bool) toggles protection for whether or not the mine deals damage, used by shield powerup" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-8">
+          <mxGeometry y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=17;endSize=5.87;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="450" as="sourcePoint" />
+            <mxPoint x="220" y="360" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-18" value="Powerups" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="150" y="465" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-19" value="Radar() sub-class that uses reveal, finds mines" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-18">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-20" value="Super sweeper () nullifies, detonates mines" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-18">
+          <mxGeometry y="60" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-21" value="Shield () toggles protection to true, if a mine is clicked, damage is nullified." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="sI31NvXyzNUmUvLH47iU-18">
+          <mxGeometry y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sI31NvXyzNUmUvLH47iU-25" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=17;endSize=5.87;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="260" as="sourcePoint" />
+            <mxPoint x="330" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
