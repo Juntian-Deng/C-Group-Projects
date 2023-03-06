@@ -4,6 +4,6 @@ This will be a game similar to the classic Minesweeper Microsoft made, but with 
 ### GUI and plans
 ![Mockup](https://github.com/Juntian-Deng/C-Group-Projects/blob/main/Minesweeper/images/GUI.png)
 
-![Class Diagram](https://github.com/Juntian-Deng/C-Group-Projects/blob/main/Minesweeper/images/plans.png)
+[Class Diagram](https://github.com/Juntian-Deng/C-Group-Projects/blob/main/Minesweeper/images/plans.png)
 
 Images taken from Shutterstock, Flaticon, and Vectorstock
