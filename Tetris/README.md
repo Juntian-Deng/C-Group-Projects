@@ -10,4 +10,4 @@ Mockup:
 Plans:
 ![Mockup](https://github.com/Juntian-Deng/C-Group-Projects/blob/main/Tetris/images/Screen%20Shot%202023-04-03%20at%209.53.39%20AM.png)
 # Link to Repl Repository
-https://replit.com/@JUNTIANDENG/SFML-Template#src/main.cpp
+https://replit.com/@JUNTIANDENG/Tetris-Project#src/main.cpp
