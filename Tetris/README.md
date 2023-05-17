@@ -1,4 +1,4 @@
-# C-Group-Projects
+# C++ Group-Projects
 This is a version of Tetris that uses different larger blocks coded in C++ and using the SFML Template created by Colin Sutter.
 
 # Project Roles:
